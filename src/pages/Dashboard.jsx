@@ -643,20 +643,18 @@ export default function Dashboard() {
   );
 
   const configuredGuestUrl = import.meta.env.VITE_GUEST_APP_URL;
+  const defaultGuestAppUrl = 'https://guest-app.codarchs-main.workers.dev';
   const guestAppBaseUrl = normalizeGuestUrl(
     (isLocalDev && typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
       ? `https://${window.location.hostname}:4175`
-      : (configuredGuestUrl || (typeof window !== 'undefined' ? `https://${window.location.hostname}:4175` : 'https://localhost:4175'))
+      : (configuredGuestUrl || (isLocalDev
+        ? (typeof window !== 'undefined' ? `https://${window.location.hostname}:4175` : 'https://localhost:4175')
+        : defaultGuestAppUrl))
   );
 
   let guestMenuUrl;
   if (hotelMenuId && hotelSubdomain) {
-    const configuredDomain = configuredGuestUrl
-      ? configuredGuestUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')
-      : (typeof window !== 'undefined' ? window.location.host : 'localhost:4175');
-    guestMenuUrl = isLocalDev
-      ? `${guestAppBaseUrl.replace(/\/$/, '')}/menu/1?hotel=${encodeURIComponent(hotelSubdomain)}`
-      : `https://${hotelSubdomain}.${configuredDomain}/menu/1`;
+    guestMenuUrl = `${guestAppBaseUrl.replace(/\/$/, '')}/menu/1?hotel=${encodeURIComponent(hotelSubdomain)}`;
   } else if (hotelSubdomain) {
     guestMenuUrl = `${guestAppBaseUrl.replace(/\/$/, '')}/hotel/${encodeURIComponent(hotelSubdomain)}/menu`;
   } else if (hotelMenuId) {

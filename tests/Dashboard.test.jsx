@@ -333,7 +333,10 @@ describe('Admin Dashboard Suite (TC-ADM-021 to TC-ADM-045)', () => {
     await waitFor(() => {
       const previewLink = screen.getByRole('link', { name: /Preview Menu/i });
       expect(previewLink).toBeInTheDocument();
-      expect(previewLink).toHaveAttribute('href', expect.stringContaining('grand-horizon'));
+      const previewUrl = new URL(previewLink.getAttribute('href'));
+      expect(previewUrl.pathname).toBe('/menu/1');
+      expect(previewUrl.searchParams.get('hotel')).toBe('grand-horizon');
+      expect(previewUrl.searchParams.get('preview')).toBe('true');
       expect(previewLink).toHaveAttribute('target', '_blank');
     });
   });
