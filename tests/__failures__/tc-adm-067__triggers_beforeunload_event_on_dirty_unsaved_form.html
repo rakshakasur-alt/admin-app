@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Failure Snapshot: TC-ADM-067: Triggers beforeunload event on dirty unsaved form</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; padding: 20px; line-height: 1.5; color: #1e293b; }
+    .error-box { background: #fee2e2; border: 1px solid #ef4444; color: #991b1b; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-family: monospace; white-space: pre-wrap; font-size: 13px; }
+    .dom-box { border: 1px solid #e2e8f0; border-radius: 6px; padding: 16px; background: #f8fafc; }
+  </style>
+</head>
+<body>
+  <h1>Failure Snapshot: TC-ADM-067: Triggers beforeunload event on dirty unsaved form</h1>
+  <p><strong>Timestamp:</strong> 2026-09-19T16:50:05.619Z</p>
+  <div class="error-box"><strong>Error Output:</strong>
+Unable to find an element with the placeholder text of: /e\.g\. Butter Chicken/i
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mstyle[39m=[32m"max-width: 1100px; margin: 0px auto;"[39m
+    [36m>[39m
+      [36m<nav[39m
+        [33maria-label[39m=[32m"Breadcrumb"[39m
+        [33mstyle[39m=[32m"margin-bottom: 16px; font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px;"[39m
+      [36m>[39m
+        [36m<a[39m
+          [33mhref[39m=[32m"/dashboard"[39m
+          [33mstyle[39m=[32m"color: var(--accent); text-decoration: none; font-weight: 500;"[39m
+        [36m>[39m
+          [0mDashboard[0m
+        [36m</a>[39m
+        [36m<span[39m
+          [33mstyle[39m=[32m"color: var(--text-placeholder);"[39m
+        [36m>[39m
+          [0m/[0m
+        [36m</span>[39m
+        [36m<span[39m
+          [33mstyle[39m=[32m"color: var(--text); font-weight: 500;"[39m
+        [36m>[39m
+          [0mAdd Dish[0m
+        [36m</span>[39m
+      [36m</nav>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;"[39m
+      [36m>[39m
+        [36m<h1[39m
+          [33mstyle[39m=[32m"margin: 0px; font-size: 22px; font-weight: 600; color: var(--text); letter-spacing: -0.02em;"[39m
+        [36m>[39m
+          [0mAdd Dish[0m
+        [36m</h1>[39m
+      [36m</div>[39m
+      [36m<form>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"dish-form-grid"[39m
+          [33mstyle[39m=[32m"display: grid; grid-template-columns: minmax(0,1fr); gap: 24px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; flex-direction: column; gap: 20px;"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<label[39m
+                [33mstyle[39m=[32m"display: block; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px;"[39m
+              [36m>[39m
+                [0mDish name[0m
+              [36m</label>[39m
+              [36m<input[39m
+                [33mname[39m=[32m"name"[39m
+                [33mplaceholder[39m=[32m"e.g. Paneer Butter Masala"[39m
+                [33mstyle[39m=[32m"width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font-size: 14px; outline: none; box-sizing: border-box;"[39m
+                [33mvalue[39m=[32m""[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: grid; grid-template-columns: 1fr 1fr; gap: 16px;"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mstyle[39m=[32m"display: block; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px;"[39m
+                [36m>[39m
+                  [0mCategory[0m
+                [36m</label>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"position: relative;"[39m
+                [36m>[39m
+                  [36m<select[39m
+                    [33mname[39m=[32m"category_select"[39m
+                    [33mstyle[39m=[32m"width: 100%; padding: 9px 32px 9px 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); font-size: 14px; outline: none; appearance: none; box-sizing: border-box; cursor: pointer;"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Starter"[39m
+                    [36m>[39m
+                      [0mStarter[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Main"[39m
+                    [36m>[39m
+                      [0mMain[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Dessert"[39m
+                    [36m>[39m
+                      [0mDessert[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Beverages"[39m
+                    [36m>[39m
+                      [0mBeverages[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Breads"[39m
+                    [36m>[39m
+                      [0mBreads[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Soups & Salads"[39m
+                    [36m>[39m
+                      [0mSoups & Salads[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Sides"[39m
+                    [36m>[39m
+                      [0mSides[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"__custom__"[39m
+                    [36m>[39m
+                      [0mCustom / Other…[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                  [36m<svg[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"14"[39m
+                    [33mstroke[39m=[32m"var(--text-muted)"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mstyle[39m=[32m"position: absolute; right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"14"[39m
+                  [36m>[39m
+                    [36m<polyline[39m
+                      [33mpoints[39m=[32m"6 9 12 15 18 9"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mstyle[39m=[32m"display: block; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px;"[39m
+                [36m>[39m
+                  [0mBase Price ([0m
+                  [0m₹[0m
+                  [0m)[0m
+                [36m</label>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"position: relative; display: flex; align-items: center;"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mstyle[39m=[32m"position: absolute; left: 12px; color: var(--text-muted); font-weight: 500; font-size: 14px; user-select: none;"[39m
+                  [36m>[39m
+                    [0m₹[0m
+                  [36m</span>[39m
+                  [36m<input[39m
+            ...
+Error</div>
+  <h2>Rendered DOM at Failure:</h2>
+  <div class="dom-box">
+    
+  </div>
+</body>
+</html>

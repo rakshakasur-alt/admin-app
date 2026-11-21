@@ -1,0 +1,33 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' https://unpkg.com 'sha256-07zgiqQZLym6Ks0w2VglJqH2/TiB1TC8V2jpq2XHfkc=' 'sha256-1l3/qLMiCkTz5JyIQtD9DwIY4J5z1TxbD0SyEVugHGY=' 'sha256-2WDHrJ9dz/aOwX2eLw3NUgk/JFI+cBz+W1HJDSQZ4qA=' 'sha256-4HhGwsd0ghWtubmw5CaWZ7MihUnTD+kFnb7WOJ9Q6L0=' 'sha256-7mMiXetb0J3ZzaNPMNIsxDxctha0fOATi9uVvaQwN/g=' 'sha256-AEHIi89mtMP9lQEFzdwZ7GM9WZdd/H7DWzWT2wVclJQ=' 'sha256-Jn3sOZke5YgYtp/OutTBmxAHzRtDvGPHHXiAuh3t3J8=' 'sha256-Vyv4Qv0Z1QxbPFCzVv1aj6Rr/JyA0pm45/CTnEf9FY0=' 'sha256-hCvURom0VFYqw4aNXPkpm67Nh6pjICm0m3TeMOqkD0Y='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com https://cdn.jsdelivr.net https://unpkg.com; font-src 'self' data: https://fonts.gstatic.com https://cdn.fontshare.com https://cdn.jsdelivr.net; img-src 'self' data: blob: https://*.supabase.co https://*.tile.openstreetmap.org https://unpkg.com; media-src 'self' blob: data: https://*.supabase.co; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://nominatim.openstreetmap.org; frame-src 'self'; worker-src 'self' blob:; frame-ancestors 'self'; upgrade-insecure-requests"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Failure Snapshot: TC-ADM-021: Renders Dashboard header, hotel title, and free tier badge</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; padding: 20px; line-height: 1.5; color: #1e293b; }
+    .error-box { background: #fee2e2; border: 1px solid #ef4444; color: #991b1b; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-family: monospace; white-space: pre-wrap; font-size: 13px; }
+    .dom-box { border: 1px solid #e2e8f0; border-radius: 6px; padding: 16px; background: #f8fafc; }
+  </style>
+</head>
+<body>
+  <h1>Failure Snapshot: TC-ADM-021: Renders Dashboard header, hotel title, and free tier badge</h1>
+  <p><strong>Timestamp:</strong> 2026-09-22T20:57:59.762Z</p>
+  <div class="error-box"><strong>Error Output:</strong>
+Found multiple elements with the text: Grand Horizon Resort
+
+Here are the matching elements:
+
+Ignored nodes: comments, script, style
+[36m<h1[39m
+  [33mclass[39m=[32m"font-serif-luxury"[39m
+  [33mstyle[39m=[32m"margin: 0px; font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.02em;"[39m
+[36m>[39m
+  [0mGrand Horizon Resort[0m
+[36m</h1>[39m
+
+Ignored nodes: comments, script, style
+[36m<p[39m
+  [33mclass[39m=[32m"font-serif-luxury"[39m
+  [33mstyle[39m=[32m"font-weight: 700; font-size: 12px; color: var(--text); margin: 8px 0px 2px;"[39m
+[36m>[39m
+  [0mGrand Horizon Resort[0m
+[36m</p>[39m
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+Ignored nodes: comments, script, style
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mstyle[39m=[32m"display: flex; flex-direction: column; gap: 14px;"[39m
+    [36m>[39m
+      [36m<div[39m
+        [33mdata-purpose[39m=[32m"hotel-brand-profile-header"[39m
+        [33mstyle[39m=[32m"background: var(--bg-card, #FFFFFF); border-radius: 14px; border: 1px solid var(--border); padding: 20px; box-shadow: var(--shadow-xs); position: relative; display: flex; flex-direction: column; gap: 16px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; align-items: center; gap: 16px; min-width: 0;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"width: 56px; height: 56px; border-radius: 50%; background: var(--primary, #271B14); display: flex; align-items: center; justify-content: center; color: rgb(253, 230, 138); box-shadow: var(--shadow-sm); flex-shrink: 0; border: 2px solid rgba(194, 120, 53, 0.4); outline: 2px solid var(--border);"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33mfill[39m=[32m"none"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-width[39m=[32m"1.8"[39m
+                [33mstyle[39m=[32m"width: 28px; height: 28px; stroke: #fde68a;"[39m
+                [33mviewBox[39m=[32m"0 0 24 24"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M12 21V11m0 0a4 4 0 00-4-4H6a2 2 0 00-2 2v2a4 4 0 004 4h4zm0 0a4 4 0 014-4h2a2 2 0 012 2v2a4 4 0 01-4 4h-4zM6 3v4m12-4v4"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"min-width: 0;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"font-serif-luxury"[39m
+                  [33mstyle[39m=[32m"margin: 0px; font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.02em;"[39m
+                [36m>[39m
+                  [0mGrand Horizon Resort[0m
+                [36m</h1>[39m
+                [36m<span[39m
+                  [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; background: var(--success-subtle, #ecfdf5); color: var(--success-fg, #15803d); border: 1px solid var(--border);"[39m
+                [36m>[39m
+                  [0m✓ Verified[0m
+                [36m</span>[39m
+                [36m<span[39m
+                  [33mstyle[39m=[32m"font-size: 11px; color: var(--text-muted); border: 1px solid var(--border); padding: 2px 10px; border-radius: 999px; font-weight: 600; background: var(--bg-subtle);"[39m
+                [36m>[39m
+                  [0mFREE TIER[0m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mstyle[39m=[32m"margin: 6px 0px 0px; font-size: 12px; color: var(--text-muted); line-height: 1.5; max-width: 680px;"[39m
+              [36m>[39m
+                [0mA five-star luxury heritage palace offering bespoke royal hospitality, Michelin-inspired dining, and cutting-edge 3D interactive table dining experiences.[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; align-items: center; gap: 8px; flex-shrink: 0;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"position: relative;"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"Platform Notifications"[39m
+                [33mstyle[39m=[32m"background: transparent; color: var(--text); width: 34px; height: 34px; border-radius: var(--radius); display: grid; place-items: center; cursor: pointer; position: relative; transition: background var(--transition);"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mheight[39m=[32m"18"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-linecap[39m=[32m"round"[39m
+                  [33mstroke-linejoin[39m=[32m"round"[39m
+                  [33mstroke-width[39m=[32m"2"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [33mwidth[39m=[32m"18"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"[39m
+                  [36m/>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M10.3 21a1.94 1.94 0 0 0 3.4 0"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+              [36m</button>[39m
+            [36m</div>[39m
+            [36m<button[39m
+              [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-subtle); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-xs);"[39m
+              [33mtitle[39m=[32m"Settings"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0m⚙️ Settings[0m
+            [36m</button>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mstyle[39m=[32m"display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap;"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-subtle); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-xs);"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33mfill[39m=[32m"none"[39m
+              [33mstroke[39m=[32m"currentColor"[39m
+              [33mstroke-width[39m=[32m"2"[39m
+              [33mstyle[39m=[32m"width: 14px; height: 14px; color: var(--accent);"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M15 12a3...
+
+Ignored nodes: comments, script, style
+[36m<html>[39m
+  [36m<head>[39m
+    [36m<title>[39m
+      [0mDashboard | AR Hotel Menu[0m
+    [36m</title>[39m
+  [36m</head>[39m
+  [36m<body>[39m
+    [36m<div>[39m
+      [36m<div[39m
+        [33mstyle[39m=[32m"display: flex; flex-direction: column; gap: 14px;"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33mdata-purpose[39m=[32m"hotel-brand-profile-header"[39m
+          [33mstyle[39m=[32m"background: var(--bg-card, #FFFFFF); border-radius: 14px; border: 1px solid var(--border); padding: 20px; box-shadow: var(--shadow-xs); position: relative; display: flex; flex-direction: column; gap: 16px;"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap;"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: flex; align-items: center; gap: 16px; min-width: 0;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"width: 56px; height: 56px; border-radius: 50%; background: var(--primary, #271B14); display: flex; align-items: center; justify-content: center; color: rgb(253, 230, 138); box-shadow: var(--shadow-sm); flex-shrink: 0; border: 2px solid rgba(194, 120, 53, 0.4); outline: 2px solid var(--border);"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33mfill[39m=[32m"none"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-width[39m=[32m"1.8"[39m
+                  [33mstyle[39m=[32m"width: 28px; height: 28px; stroke: #fde68a;"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M12 21V11m0 0a4 4 0 00-4-4H6a2 2 0 00-2 2v2a4 4 0 004 4h4zm0 0a4 4 0 014-4h2a2 2 0 012 2v2a4 4 0 01-4 4h-4zM6 3v4m12-4v4"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"min-width: 0;"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mstyle[39m=[32m"display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"[39m
+                [36m>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"font-serif-luxury"[39m
+                    [33mstyle[39m=[32m"margin: 0px; font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.02em;"[39m
+                  [36m>[39m
+                    [0mGrand Horizon Resort[0m
+                  [36m</h1>[39m
+                  [36m<span[39m
+                    [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; background: var(--success-subtle, #ecfdf5); color: var(--success-fg, #15803d); border: 1px solid var(--border);"[39m
+                  [36m>[39m
+                    [0m✓ Verified[0m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mstyle[39m=[32m"font-size: 11px; color: var(--text-muted); border: 1px solid var(--border); padding: 2px 10px; border-radius: 999px; font-weight: 600; background: var(--bg-subtle);"[39m
+                  [36m>[39m
+                    [0mFREE TIER[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mstyle[39m=[32m"margin: 6px 0px 0px; font-size: 12px; color: var(--text-muted); line-height: 1.5; max-width: 680px;"[39m
+                [36m>[39m
+                  [0mA five-star luxury heritage palace offering bespoke royal hospitality, Michelin-inspired dining, and cutting-edge 3D interactive table dining experiences.[0m
+                [36m</p>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mstyle[39m=[32m"display: flex; align-items: center; gap: 8px; flex-shrink: 0;"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"position: relative;"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"Platform Notifications"[39m
+                  [33mstyle[39m=[32m"background: transparent; color: var(--text); width: 34px; height: 34px; border-radius: var(--radius); display: grid; place-items: center; cursor: pointer; position: relative; transition: background var(--transition);"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33mfill[39m=[32m"none"[39m
+                    [33mheight[39m=[32m"18"[39m
+                    [33mstroke[39m=[32m"currentColor"[39m
+                    [33mstroke-linecap[39m=[32m"round"[39m
+                    [33mstroke-linejoin[39m=[32m"round"[39m
+                    [33mstroke-width[39m=[32m"2"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [33mwidth[39m=[32m"18"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"[39m
+                    [36m/>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M10.3 21a1.94 1.94 0 0 0 3.4 0"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-subtle); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-xs);"[39m
+                [33mtitle[39m=[32m"Settings"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0m⚙️ Settings[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap;"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33mstyle[39m=[32m"display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-subtle); color: var(--text); font-size: 12px; font-weight: 600; cursor: pointer; box-shadow: var(--shadow-xs);"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33mfill[39m=[32...
+Error</div>
+  <h2>Rendered DOM at Failure:</h2>
+  <div class="dom-box">
+    
+  </div>
+</body>
+</html>
